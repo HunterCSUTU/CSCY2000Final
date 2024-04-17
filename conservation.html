@@ -9,23 +9,42 @@
     <main>
         <form>
             <fieldset>
-                <legend>Personal Information</legend>
+                <legend>FAQs</legend>
+                <label for="faq-options">What would you like to </label><br>
+                <input type="checkbox" id="faq-option-1" name="faq-option" value="Option 1">
+                <label for="faq-option-1">Option 1</label><br>
+                <input type="checkbox" id="faq-option-2" name="faq-option" value="Option 2">
+                <label for="faq-option-2">Option 2</label><br>
+                <input type="checkbox" id="faq-option-3" name="faq-option" value="Option 3">
+                <label for="faq-option-3">Option 3</label><br>
+                <input type="checkbox" id="faq-option-4" name="faq-option" value="Option 4">
+                <label for="faq-option-4">Option 4</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information (If you want to be part of the monthly news letter)</legend>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
+                <br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
+                <br>
                 <label for="dob">Date of Birth:</label>
                 <input type="date" id="dob" name="dob">
+                <br>
             </fieldset>
             
             <fieldset>
-                <legend>Address Information</legend>
+                <legend>Address Information (If you want to be part of the monthly news letter)</legend>
                 <label for="address">Address:</label>
+                <br>
                 <textarea id="address" name="address" rows="4" cols="50"></textarea>
+                <br>
                 <label for="city">City:</label>
                 <input type="text" id="city" name="city">
+                <br>
                 <label for="zip">Zip Code:</label>
                 <input type="text" id="zip" name="zip">
+                <br>
             </fieldset>
             
             <input type="submit" value="Submit">
