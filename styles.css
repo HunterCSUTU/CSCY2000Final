@@ -14,5 +14,4 @@
         grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
         gap: 20px; /* Gap between columns */
         }
-
 }
