@@ -4,12 +4,16 @@ body, html {
     height: 100%;
 }
 
-h1 {
+img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, p {
     text-align: center;
 }
-p {
-    text-align: center;
-}
+
 
 .tab-desk {
     display: none;
@@ -38,19 +42,31 @@ body {
     .tab-desk {
         display: inline-block;
     }
-    /* Set the body to fill the entire viewport */
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
+
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-        gap: 20px; /* Gap between columns */
+        grid-template-columns: auto auto auto; 
+        gap: 10px;
     }
 
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
+    .grid-container2 h2{
+        font-size: 2em
+    }
+
+    .grid-container2 img {
+        text-align: center;
+        max-width: 90%;
+        max-height: 50%;
+        height: auto;
+        margin: 0 auto
+
+    }
 
 
 }
