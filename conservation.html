@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Conservation</title>
-	<meta charset="utf-8">
+    <title>Conservation</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+
+    <header>
+        <h1>PADI AWARE Foundation</h1>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="partnership.html">Partnership</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="nav-icon" onclick="menu()">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="conservation.html">Conservation</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <div id="fish"></div>
     <main>
         <h1>We are changing the Ocean with your help!</h1>
-        <p>Our global community of Ocean Torchbearers is leading a powerful movement to restore ourselves, our communities and the blue planet we call home.</p>
-            
-        <div id="tab-desk" class="grid-container">
+        <p>Our global community of Ocean Torchbearers is leading a powerful movement to restore ourselves, our
+            communities and the blue planet we call home.</p>
+
+        <div class="tab-desk" class="grid">
             <form>
                 <fieldset>
                     <legend>FAQs</legend>
@@ -20,7 +54,8 @@
                     <label for="faq-option-1">Option 1</label><br>
                     <input type="checkbox" id="faq-option-2" name="faq-option" value="Option 2">
                     <label for="faq-option-2">Option 2</label><br>
-                    <input type="checkbox" id="faq-option-3" name="faq-option" value="Option 3">                        <label for="faq-option-3">Option 3</label><br>
+                    <input type="checkbox" id="faq-option-3" name="faq-option" value="Option 3"> <label
+                        for="faq-option-3">Option 3</label><br>
                     <input type="checkbox" id="faq-option-4" name="faq-option" value="Option 4">
                     <label for="faq-option-4">Option 4</label><br>
                 </fieldset>
@@ -33,13 +68,13 @@
                     <input type="text" id="name" name="name">
                     <br>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">                        <br>
+                    <input type="email" id="email" name="email"> <br>
                     <label for="dob">Date of Birth:</label>
                     <input type="date" id="dob" name="dob">
                     <br>
                 </fieldset>
                 <input type="submit" value="Submit">
-            </form>                
+            </form>
             <form>
                 <fieldset>
                     <legend>Address Information (If you want to be part of the bi-yearly physical magazine)</legend>
@@ -55,10 +90,11 @@
                     <br>
                 </fieldset>
                 <input type="submit" value="Submit">
-            </form> 
-        </div> 
+            </form>
+        </div>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>

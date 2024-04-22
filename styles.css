@@ -1,22 +1,71 @@
-/* Mobile Viewport rules */
-@media screen and (max-width: 768px) {
-    /* Set the body to fill the entire viewport */
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-    }
-
-    #tab-desk {
-        display: none;
-    }
-    .ocean-backgound {
-        background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef);
-    }
-
-
-
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+
+/* Mobile Viewport rules */
+/* Style rule shows mobile class and hides tab-desk class */
+.mobile, .mobile-tablet {
+    display: block;
+}
+
+.tab-desk, .desktop, #nav-links {
+    display: none;
+}
+
+/* Style rules for header area */
+.mobile h1, .mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+/* Set the body to fill the entire viewport */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.tab-desk {
+    display: none;
+}
+
+.ocean-backgound {
+    background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef);
+}
+
+/* Style rules for Nav area */
+nav {
+    background-color: #2a1f14;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
+}
+
 
 
 
@@ -24,6 +73,37 @@
 
 /* Media query for tablets */
 @media screen and (min-width: 768px) {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Style rules for nav area */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    nav li a {
+        padding: 0.5em;
+        display: block;
+        color: #f6eee4;
+        text-decoration: none;
+    }
+
     /* Set the body to fill the entire viewport */
     body, html {
         margin: 0;
@@ -31,24 +111,32 @@
         height: 100%;
     }
 
-    .grid-container {
+    .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
         gap: 20px; /* Gap between columns */
     }
 
+    
+
+
     body {
         background: linear-gradient(#90e0ef, #00b4d8, #0077b6);
-        background-size: cover; /* Ensures the background covers the entire viewport */
+        background-size: cover;
+        /* Ensures the background covers the entire viewport */
     }
 
     #fish {
         width: 50px;
         height: 50px;
-        background-image: url('images/fish.png'); /* Replace 'fish.png' with your fish icon */
+        background-image: url('images/fish.png');
+        /* Replace 'fish.png' with your fish icon */
         background-size: contain;
         position: absolute;
-        transition: transform 0.1s ease-out; /* Add transition for smooth movement */
+        transition: transform 0.1s ease-out;
+        /* Add transition for smooth movement */
     }
+
+
 
 }
