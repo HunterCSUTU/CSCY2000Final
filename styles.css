@@ -153,6 +153,107 @@ nav {
     object-fit: cover; /* Ensure the image covers the container without stretching */
 }
 
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment as needed */
+    padding: 5%;
+}
+
+/* Individual course */
+.course {
+    width: calc(33.33% - 20px); /* Adjust width as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    padding: 20px;
+    background-color: #f9f9f9; /* Adjust background color as needed */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a card-like effect */
+}
+
+/* Course title */
+.course-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Course description */
+.course-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Style for the newsletter form */
+.newsletter-form {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form legend */
+.newsletter-form legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style for form fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px; /* Adjust as needed */
+}
+
+/* Style for checkboxes */
+.form-group p {
+    font-weight: bold;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style for submit button */
+.newsletter-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
 /* Media query for tablets */
 @media screen and (min-width: 550px) {
 
