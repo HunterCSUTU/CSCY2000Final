@@ -65,15 +65,28 @@ body {
     background-size: cover; /* Ensures the background covers the entire viewport */
 }
 
+
 main ul {
     margin-left: 25%;
 }
 
+
 footer {
-    background-color: #1976d2;
-    color: white;
-    padding: 10px;
-    margin-top: auto;
+    margin: 20% 0 auto auto;
+    text-align: center;
+    font-size: 2em;
+    clear: left;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.social img {
+    display: inline-block;
+    padding: 4%;
+    max-width: 100px; /* Adjust the max-width as needed */
+    height: auto;
 }
 
 iframe {
@@ -91,9 +104,6 @@ iframe {
     display: none;
 }
 
-.ocean-backgound {
-    background: linear-gradient(to bottom, #0077b6, #00b4d8, #90e0ef);
-}
 
 /* Style rules for Nav area */
 nav {
@@ -144,7 +154,7 @@ nav {
 }
 
 /* Media query for tablets */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 550px) {
 
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
     .tab-desk {
@@ -183,6 +193,17 @@ nav {
         height: 100%;
     }
 
+    /* Tablet Viewport: Style rules for footer element */
+    .copyright {
+        float: left;
+        width: 65%;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto; 
@@ -208,4 +229,15 @@ nav {
         height: auto;
         margin: 0 auto
     }
+}
+
+
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
 }
