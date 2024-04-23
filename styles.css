@@ -66,6 +66,15 @@ body {
     background-size: cover; /* Ensures the background covers the entire viewport */
 }
 
+p {
+    font-family: "PT Serif", serif, Arial, sans-serif;
+}
+
+h1 {
+    font-family: "Sedan", serif, Arial, sans-serif;
+}
+
+
 main {
     background-color: #fff;
     margin: auto;
@@ -104,6 +113,45 @@ iframe {
     display: block;
 }
 
+
+
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.sedan-regular-italic {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+  
 
 .tab-desk {
     display: none;
