@@ -52,6 +52,7 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+
 th {
     background-color: #1976d2; /* Lighter blue for header cells */
 }
@@ -65,14 +66,17 @@ body {
     background-size: cover; /* Ensures the background covers the entire viewport */
 }
 
+main {
+    background-color: #fff;
+    margin: auto;
+}
 
 main ul {
     margin-left: 25%;
 }
 
-
 footer {
-    margin: 20% 0 auto auto;
+    margin: auto;
     text-align: center;
     font-size: 2em;
     clear: left;
@@ -100,6 +104,7 @@ iframe {
     max-height: 10%; 
     padding: 20px 0;
 }
+
 .tab-desk {
     display: none;
 }
@@ -253,6 +258,29 @@ nav {
     background-color: #0056b3;
 }
 
+.jumbotron {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.top-50 {
+    top: 50%;
+}
+
+.start-50 {
+    left: 50%;
+}
+
+.translate-middle {
+    transform: translate(-50%, -50%);
+}
 
 /* Media query for tablets */
 @media screen and (min-width: 550px) {
@@ -311,9 +339,6 @@ nav {
         gap: 10px;
     }
 
-    
-
-
     .grid-container2 {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -331,7 +356,6 @@ nav {
         margin: 0 auto
     }
 }
-
 
 /* Media Query for Print */
 @media print {
