@@ -111,6 +111,7 @@ video {
 iframe {
     margin: 20px auto; 
     display: block;
+    padding-bottom: 5px;
 }
 
 
@@ -237,6 +238,39 @@ nav {
     color: #666;
 }
 
+.masthead-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+}
+
+.masthead-subheading {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+}
+/* Media query for mobile viewport */
+@media screen and (max-width: 767px) {
+    .course {
+        width: 100%; /* Set width to 100% for mobile viewport */
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem; /* Adjust font size for mobile */
+    }
+
+    .jumbotron p {
+        font-size: 1.2rem; /* Adjust font size for mobile */
+    }
+
+    .gallery {
+        grid-template-columns: auto;
+    }
+}
+
+
 /* Style for the newsletter form */
 .newsletter-form {
     max-width: 600px; /* Adjust as needed */
@@ -308,6 +342,28 @@ nav {
 
 .jumbotron {
     position: relative;
+    text-align: center;
+}
+
+.jumbotron img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.jumbotron .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem; /* Adjust font size for desktop */
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.5rem; /* Adjust font size for desktop */
 }
 
 .position-absolute {
@@ -331,7 +387,7 @@ nav {
 }
 
 /* Media query for tablets */
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 768px) {
 
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
     .tab-desk {
@@ -402,6 +458,20 @@ nav {
         max-height: 50%;
         height: auto;
         margin: 0 auto
+    }
+
+    .masthead-subheading {
+        font-size: 2.25rem;
+        font-style: italic;
+        line-height: 2.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .masthead-heading {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        margin-bottom: 4rem;
     }
 }
 
